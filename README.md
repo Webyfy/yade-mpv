@@ -10,3 +10,8 @@
 - [ ] Make maximized window cover whole screen (irrespective of video aspect ratio)
 - [ ] OSD on Pause
 - [ ] Pause playback on losing focus
+
+## Dependencies
+- mpv
+- mpv-mpris
+- yt-dlp
