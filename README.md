@@ -16,7 +16,7 @@
 - mpv
 - mpv-mpris
 - yt-dlp
-
+- python3
 
 ### Refernces/Third party projects in use
 - [Muhammad Afzal Tahir - *mpv input config*](https://gist.github.com/afzl-wtu/21f3932b81e26421ff75f3f115747093)

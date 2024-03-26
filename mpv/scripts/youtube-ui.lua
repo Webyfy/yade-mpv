@@ -2470,6 +2470,23 @@ mp.observe_property("idle-active", "bool",
         request_tick()
     end
 )
+
+-- yade specific customizations start
+mp.observe_property("seeking", "bool", function(name, val)
+    show_osc()
+    request_tick()
+end)
+mp.observe_property("volume", "number", function(name, val)
+	show_osc()
+    request_tick()
+end)
+mp.observe_property("mute", "bool", function(name, val)
+	show_osc()
+    request_tick()
+end)
+
+-- yade specific customizations end
+
 mp.observe_property("pause", "bool", pause_state)
 mp.observe_property("demuxer-cache-state", "native", cache_state)
 mp.observe_property("vo-configured", "bool", function(name, val)
