@@ -20,12 +20,12 @@ ifneq ("$(wildcard $(MPV_CONFIG_DIR)/mpv.conf)","")
 endif
 
 install: preinst
-	install -Dm755 usr/bin/umpv "$(bindir)/mpv"
-	install -Dm644 mpv/input.conf "$(MPV_CONFIG_DIR)/input.conf"
-	install -Dm644 mpv/mpv.conf "$(MPV_CONFIG_DIR)/mpv.conf"
-	install -Dm644 mpv/scripts/pause_on_focus_loss.lua "$(MPV_CONFIG_DIR)/scripts/pause_on_focus_loss.lua"
-	install -Dm644 mpv/scripts/visualizer.lua "$(MPV_CONFIG_DIR)/scripts/visualizer.lua"
-	install -Dm644 mpv/scripts/youtube-ui.lua "$(MPV_CONFIG_DIR)/scripts/youtube-ui.lua"
+	install -Dm755 bin/umpv "$(bindir)/mpv"
+	install -Dm644 conf/input.conf "$(MPV_CONFIG_DIR)/input.conf"
+	install -Dm644 conf/mpv.conf "$(MPV_CONFIG_DIR)/mpv.conf"
+	install -Dm644 conf/scripts/pause_on_focus_loss.lua "$(MPV_CONFIG_DIR)/scripts/pause_on_focus_loss.lua"
+	install -Dm644 conf/scripts/visualizer.lua "$(MPV_CONFIG_DIR)/scripts/visualizer.lua"
+	install -Dm644 conf/scripts/youtube-ui.lua "$(MPV_CONFIG_DIR)/scripts/youtube-ui.lua"
 
 uninstall:
 	$(RM) -f "$(bindir)/mpv"
