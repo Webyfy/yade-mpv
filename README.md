@@ -21,9 +21,8 @@
 - xdotool
 
 ### Refernces/Third party projects in use
-- [Muhammad Afzal Tahir - *mpv input config*](https://gist.github.com/afzl-wtu/21f3932b81e26421ff75f3f115747093)
 - [umpv](https://github.com/mpv-player/mpv/blob/master/TOOLS/umpv)
 - [mpv-osc-youtube-ui](https://git.codeproxy.net/eatsu/mpv-osc-youtube-ui)
 - [mfcc64's *visualizer*](https://github.com/mfcc64/mpv-scripts/blob/master/visualizer.lua)
-- ~~[thumbfast](https://github.com/po5/thumbfast)~~
+
 
