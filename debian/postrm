@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if [ -f /etc/mpv/mpv.conf.ybak ]
+then
+	mv -f /etc/mpv/mpv.conf.ybak /etc/mpv/mpv.conf
+else
+	echo "hwdec=vaapi" > /etc/mpv/mpv.conf
+fi
+
+#DEBHELPER#

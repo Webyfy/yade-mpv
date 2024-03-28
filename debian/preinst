@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+if [ -f /etc/mpv/mpv.conf ] && [ ! -f /etc/mpv/mpv.conf.ybak ]
+then
+	cp /etc/mpv/mpv.conf /etc/mpv/mpv.conf.ybak
+fi
+
+#DEBHELPER#

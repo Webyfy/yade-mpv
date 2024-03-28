@@ -13,12 +13,15 @@ endif
 MPV_CONFIG_DIR := $(DESTDIR)$(MPV_CONFIG_DIR)
 bindir := $(DESTDIR)$(bindir)
 
+all: ;
+
 preinst:
 ifneq ("$(wildcard $(MPV_CONFIG_DIR)/mpv.conf)","")
 	cp -n $(MPV_CONFIG_DIR)/mpv.conf $(MPV_CONFIG_DIR)/mpv.conf.ybak
 endif
 
 install-only:
+	echo "Install Only"
 	install -Dm755 yade-mpv/usr/bin/umpv "$(bindir)/umpv"
 	install -Dm644 yade-mpv/etc/mpv/input.conf "$(MPV_CONFIG_DIR)/input.conf"
 	install -Dm644 yade-mpv/etc/mpv/mpv.conf "$(MPV_CONFIG_DIR)/mpv.conf"
@@ -66,7 +69,10 @@ uninstall:
 	$(Q)$(MAKE) uninstall-only
 	$(Q)$(MAKE) postrm
 
+deb:
+	debuild -us -uc
+
 clean:
 	git clean -fdX
 
-.PHONY: preinst install-only postinst install prerm uninstall-only postrm clean
+.PHONY: preinst install-only postinst install prerm uninstall-only postrm clean all deb

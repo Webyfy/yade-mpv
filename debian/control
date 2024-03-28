@@ -1,0 +1,16 @@
+Source: yade-mpv
+Maintainer: webyfy <info@webyfy.com>
+Section: video
+Priority: optional
+Standards-Version: 4.5.0
+Build-Depends: debhelper-compat (= 13)
+
+Package: yade-mpv
+Architecture: any
+Depends: mpv, mpv-mpris, yt-dlp, python3, fonts-open-sans, xdotool, ${misc:Depends}
+Replaces: mpv
+Enhances: mpv
+Homepage: https://gitlab.com/webyfy/iot/e-gurukul/yade-mpv
+Description: YADE customizations for mpv
+ This package customizes mpv to give it a modern look.
+ It also modifies mpv to use in 10 foot UI using remote control.

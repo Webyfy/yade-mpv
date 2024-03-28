@@ -1,0 +1,25 @@
+debian/*
+!debian/changelog
+!debian/control
+!debian/copyright
+!debian/dirs
+!debian/install
+!debian/rules
+!debian/preinst
+!debian/postinst
+!debian/prerm
+!debian/postrm
+!debian/source
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
