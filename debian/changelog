@@ -1,5 +1,5 @@
-yade-mpv (0.66) UNRELEASED; urgency=low
+yade-mpv (1.0.0) stable; urgency=medium
 
-  * Initial release.
+  * First stable release.
 
- -- webyfy <info@webyfy.com>  Wed, 27 Mar 2024 22:53:08 +0530
+ -- webyfy <info@webyfy.com>  Mon, 01 Apr 2024 13:58:20 +0530
