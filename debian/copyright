@@ -18,10 +18,6 @@ License: GPL-2+
 Files: yade-mpv/etc/mpv/scripts/youtube-ui.lua
 Copyright: 2023, eatsu
 License: LGPL-2.1
-Comment: 
- Upstream project doesn't provide a license file. Since the project is derived
- from a project using LGPL-2.1, it should be licensed under the same or later 
- version of the LGPL or GPL. 
 
 Files: yade-mpv/etc/mpv/scripts/visualizer.lua
 Copyright: none
